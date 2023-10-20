@@ -25,6 +25,11 @@ public class EmployeeDao {
 		return "Sorry";
 	}
 	
+	public String updateVal (Employee u) {
+		er.save(u);
+		return "Updated";
+	}
+	
 	public Employee getId(int f) throws IdAlreadyInException{
 		return er.findById(f).orElseThrow(()->new IdAlreadyInException("Exixt"));
 	}

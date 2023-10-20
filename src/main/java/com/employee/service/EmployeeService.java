@@ -34,6 +34,10 @@ public class EmployeeService {
 		return ed.getId(c);
 	}
 	
+	public String updateVal (Employee t) {
+		return ed.updateVal(t);
+	}
+	
 	
 
 }
